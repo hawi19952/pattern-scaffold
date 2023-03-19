@@ -6,7 +6,7 @@ const templatesPath = `${__dirname}/templates`;
 const helpersPath = `${projectPath}/helpers`;
 const initPath = `${projectPath}/initializers`;
 const envPath = `${projectPath}/env`;
-const modulesPath = `${projectPath}/modules`
+
 
 
 /**
@@ -17,31 +17,16 @@ const modulesPath = `${projectPath}/modules`
  * add package to package.json 
  * */  
 
+function createDefaultEndpoint () {
+  writeFile('')
+}
+
 function writeExpressFiles() {
   writeFile('default.env', `${templatesPath}/env/default.env`, envPath);
   writeFile('init.env.js', `${templatesPath}/initializers/init.env.js`, initPath);
   writeFile('init.express.js', `${templatesPath}/initializers/init.express.js`, initPath);
   writeFile('index.js', `${templatesPath}/initializers/index.js`, initPath);
   writeFile('server.js', `${templatesPath}/server.js`, projectPath);
-}
-
-function updateInitWithFunction () {
-  
-}
-
-function initDefaultModule() {
-  // Global Modules Initializer
-  writeFile('index.js', `${templatesPath}/modules/index.js`, modulesPath);
-
-  // Controllers
-  writeFile('get.default.js',`${templatesPath}/modules/default/controllers/get.default.js`, `${modulesPath}/default` )
-  writeFile('index.js',`${templatesPath}/modules/default/controllers/index.js`, `${modulesPath}/default` )
-  
-  // Functions
-  writeFile('default.function.js',`${templatesPath}/modules/default/functions/default.function.js`, `${modulesPath}/default` )
-
-  // Routes
-  writeFile('default.routes.js', `${templatesPath}/modules/default/default.routes.js`, `${modulesPath}/default`)
 }
 
 function writeExpressInit () {
