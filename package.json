@@ -1,6 +1,6 @@
 {
-  "name": "scaffold",
-  "version": "1.0.0",
+  "name": "pattern-scaffold",
+  "version": "1.0.1",
   "description": "",
   "main": "scaffold.js",
   "type": "commonjs",
@@ -10,6 +10,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hawi19952/pattern-scaffold"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
